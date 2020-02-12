@@ -14,7 +14,7 @@ $(document).ready(function() {
               
       }); 
 	 $("#moveme").click(function() {
-	$("#RaketDiv").show();
+	$("#RaketDiv").show();	
 	 	// console.log(y +"Y =");
 
    //       //var boundY= window.innerHeight;
@@ -28,7 +28,7 @@ $(document).ready(function() {
 	 	 $("#RaketDiv").animate({
 			top: y,
 			left: X},
-			1500, function(){
+			3000, function(){
 				
              $("#RaketDiv").hide();
              $("#moveme img").attr("src","boom.gif").css("border-radius","50%");
@@ -36,5 +36,11 @@ $(document).ready(function() {
 			});
 	
 	 });
+	 $(document).click(function() {
+	 	
+	 var song = document.getElementById("bomb");
+	 console.log(song);
+	 song.play();
+	});
 
 });
